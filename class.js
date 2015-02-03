@@ -71,7 +71,7 @@
         // Merge object properties and methods
         fn.prototype = merge(fn.prototype, obj);
 
-        return fn;
+        return fn.bind(fn);
     }
 
     if (typeof define !== 'undefined')
