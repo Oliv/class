@@ -36,7 +36,7 @@
 
                 for (var key in original) {
                     if (original.hasOwnProperty(key)) {
-                        clone[key] = clone(original[key]);
+                        cloned[key] = clone(original[key]);
                     }
                 }
             } else {
